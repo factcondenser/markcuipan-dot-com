@@ -69,7 +69,7 @@ i.fa-envelope:hover {
     opacity: .6
 }
 
-.audio-clip:hover {
+.lead a.audio-clip:hover {
     text-decoration: none;
     color: #ddd;
     opacity: 1.0
