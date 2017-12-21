@@ -230,7 +230,10 @@ i.fa-envelope:hover {
 }
 
 .intro,
-.projects {
+.projects,
+.tutor-bg,
+.rates,
+.contact {
     padding: 50px 0;
     background: #eee;
     color: #333
@@ -300,17 +303,6 @@ i.work-icon {
     background-position: center center
 }
 
-.callout.reads {
-    background: url(../img/reads-blur.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center
-}
-
 .callout.about {
     background: url(../img/hiking.jpg);
     background-attachment: fixed;
@@ -324,6 +316,39 @@ i.work-icon {
 
 .callout.resume {
     background: url(../img/thinker-blur.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.callout.tutor {
+    background: url(../img/tutor.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.callout.rates {
+    background: url(../img/rates.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.callout.contact {
+    background: url(../img/contact.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -397,7 +422,7 @@ i.scroll:hover {
     .callout.work,
     .callout.projects,
     .callout.resume,
-    .callout.reads,
+    .callout.tutor,
     .callout.about {
         background-attachment: scroll
     }
