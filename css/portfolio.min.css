@@ -229,6 +229,24 @@ i.fa-envelope:hover {
     background-image: url('../img/Madison/bg0.jpg')
 }
 
+.tutor-src {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -10;
+    background-color: #222;
+    background-image: url('../tutor/img/tutor.jpg')
+}
+
 .intro,
 .projects,
 .tutor-bg,
@@ -325,19 +343,8 @@ i.work-icon {
     background-position: center center
 }
 
-.callout.tutor {
-    background: url(../img/tutor.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center
-}
-
 .callout.rates {
-    background: url(../img/rates.jpg);
+    background: url(../tutor/img/rates.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -348,7 +355,7 @@ i.work-icon {
 }
 
 .callout.contact {
-    background: url(../img/contact.jpg);
+    background: url(../tutor/img/contact.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -416,7 +423,8 @@ i.scroll:hover {
 }
 
 @media(max-width:768px) {
-    .img-src {
+    .img-src
+    .tutor-src {
         background-attachment: scroll
     }
     .callout.work,
@@ -428,7 +436,7 @@ i.scroll:hover {
     }
 }
 
-li {
+li:not(.credentials, .philosophy) {
     list-style: none
 }
 
@@ -521,3 +529,26 @@ li {
         font-size: 21px
     }
 }
+
+/** Tutor **/
+.credentials,
+.philosophy {
+    text-align: left
+}
+
+/* .credentials li a {
+    color: #999;
+    display: block;
+    text-decoration: none
+}
+
+.credentials li a:hover {
+    color: #eee;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none
+}
+
+.credentials li a:active,
+.credentials li a:focus {
+    text-decoration: none
+} */
