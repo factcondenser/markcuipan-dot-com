@@ -549,10 +549,22 @@ li:not(.credentials, .philosophy) {
     text-decoration: none;
 }
 
+.philo-subsections {
+  display: none;
+}
+
 .philosophy-left {
   height: 100vh;
   padding: 350px 0;
   color: #b02334;
+}
+
+.philosophy-left:hover {
+  display: none;
+}
+
+.philosophy-left:hover .philo-subsections {
+  display: block;
 }
 
 .philosophy-right {
