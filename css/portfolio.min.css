@@ -248,7 +248,10 @@ i.fa-envelope:hover {
 }
 
 .intro,
-.projects {
+.projects,
+.tutor-bg,
+.rates,
+.contact {
     padding: 50px 0;
     background: #eee;
     color: #333
@@ -329,8 +332,19 @@ i.work-icon {
     background-position: center center
 }
 
-.callout.resume {
-    background: url(../img/thinker-blur.jpg);
+.callout.rates {
+    background: url(../tutor/img/rates.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.callout.contact {
+    background: url(../tutor/img/contact.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
