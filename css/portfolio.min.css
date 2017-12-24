@@ -248,10 +248,7 @@ i.fa-envelope:hover {
 }
 
 .intro,
-.projects,
-.tutor-bg,
-.rates,
-.contact {
+.projects {
     padding: 50px 0;
     background: #eee;
     color: #333
@@ -343,28 +340,6 @@ i.work-icon {
     background-position: center center
 }
 
-.callout.rates {
-    background: url(../tutor/img/rates.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center
-}
-
-.callout.contact {
-    background: url(../tutor/img/contact.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center
-}
-
 .projects {
     padding: 50px 0
 }
@@ -430,7 +405,6 @@ i.scroll:hover {
     .callout.work,
     .callout.projects,
     .callout.resume,
-    .callout.tutor,
     .callout.about {
         background-attachment: scroll
     }
@@ -531,24 +505,53 @@ li:not(.credentials, .philosophy) {
 }
 
 /** Tutor **/
-.credentials,
-.philosophy {
-    text-align: left
+.tutor-blurb {
+  height: 100vh;
+  padding: 325px 0;
+  color: #254c79;
 }
 
-/* .credentials li a {
-    color: #999;
-    display: block;
-    text-decoration: none
+.credentials {
+    height: 100vh;
+    padding: 250px 0;
+    background: #0f4d92;
+    color: #fff;
+}
+
+.credentials li a {
+    color: #fff;
+    display: inline;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .credentials li a:hover {
-    color: #eee;
-    background: rgba(255, 255, 255, 0.2);
-    text-decoration: none
+    color: #ddd;
+    text-decoration: none;
 }
 
 .credentials li a:active,
 .credentials li a:focus {
-    text-decoration: none
-} */
+    text-decoration: none;
+}
+
+.philosophy-left {
+  height: 100vh;
+  padding: 350px 0;
+  color: #b02334;
+}
+
+.philosophy-right {
+  height: 100vh;
+  padding: 250px 0;
+  background: #c90016;
+  color: #fff;
+}
+
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
