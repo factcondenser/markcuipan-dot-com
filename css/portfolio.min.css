@@ -332,19 +332,8 @@ i.work-icon {
     background-position: center center
 }
 
-.callout.rates {
-    background: url(../tutor/img/rates.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center
-}
-
-.callout.contact {
-    background: url(../tutor/img/contact.jpg);
+.callout.resume {
+    background: url(../img/thinker.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -519,6 +508,7 @@ li:not(.credentials, .philosophy) {
 }
 
 /** Tutor **/
+/* credentials section */
 .tutor-blurb {
   height: 100vh;
   padding: 325px 0;
@@ -549,35 +539,199 @@ li:not(.credentials, .philosophy) {
     text-decoration: none;
 }
 
-.philo-subsections {
+/* philosophy section */
+#philo-top {
+  height: 33vh;
+}
+
+#philo-top-left {
+  height: 33vh;
+  background: #b02334;
+  color: #fff;
   display: none;
 }
 
-.philosophy-left {
-  height: 100vh;
-  padding: 350px 0;
+#philo-top-right {
+  height: 33vh;
+  background: #00c99d;
+  color: #fff;
+  display: none;
+}
+
+.philo-middle {
+  height: 34vh;
+  padding: 55px;
   color: #b02334;
 }
 
-.philosophy-left:hover {
+#philo-bottom-placeholder {
+  height: 33vh;
+}
+
+#philo-bottom {
   display: none;
+  height: 33vh;
+  background: #7cc900;
+  color: #fff;
 }
 
-.philosophy-left:hover .philo-subsections {
-  display: block;
-}
-
-.philosophy-right {
+.philo-right {
   height: 100vh;
-  padding: 250px 0;
+  padding: 270px 0;
   background: #c90016;
   color: #fff;
 }
 
-.visuallyhidden {
+/* .triangle-down {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  right: -33vh;
+	width: 0;
+	height: 0;
+	border-left: 282px solid transparent;
+	border-right: 282px solid transparent;
+	border-top: 282px solid #c90016;
+} */
+
+.padding-0 {
+    padding-right:0;
+    padding-left:0;
+}
+
+.left-slideboard {
+    overflow: hidden;
+    position: relative;
+}
+
+.left-slideholder {
+    position: absolute;
+    top: 0px;
+    left: -505px;
+    right: 505px;
+    bottom: 0px;
+}
+
+.left-slider {
+    position: absolute;
+    top: 0px;
+    left: 505px;
+    right: -505px;
+    bottom: 0px;
+    transition: 0.4s ease;
+    background: #00c99d;
+    visibility: hidden;
+}
+
+.left-slideboard:hover .right-slider {
+    left: 0px;
+    right: 0px;
+    visibility: visible;
+}
+
+.right-slideboard {
+    overflow: hidden;
+    position: relative;
+}
+
+.right-slideholder {
+    position: absolute;
+    top: 0px;
+    left: 505px;
+    right: -505px;
+    bottom: 0px;
+}
+
+.right-slider {
+    position: absolute;
+    top: 0px;
+    left: -505px;
+    right: 505px;
+    bottom: 0px;
+    transition: 0.4s ease;
+    background: #b02334;
+    visibility: hidden;
+}
+
+.right-slideboard:hover .left-slider {
+    left: 0px;
+    right: 0px;
+    visibility: visible;
+}
+
+.bottom-slideboard {
+    overflow: hidden;
+    position: relative;
+}
+
+.top-slideholder {
+    position: absolute;
+    top: -505px;
+    left: 0px;
+    right: 0px;
+    bottom: 505px;
+}
+
+.top-slider {
+    position: absolute;
+    top: 505px;
+    left: 0px;
+    right: 0px;
+    bottom: -505px;
+    transition: 0.4s ease;
+    background: #7cc900;
+    visibility: hidden;
+}
+
+.bottom-slideboard:hover .top-slider {
+    visibility: visible;
+    top: 0px;
+    bottom: 0px;
+}
+
+/* courses section */
+#courses-left {
+  height: 100vh;
+  padding: 400px 0;
+  color: #1a8357;
+}
+
+#academics {
+  height: 50vh;
+  background: #00693e;
+  color: #fff;
+}
+
+#test-prep {
+  height: 50vh;
+  background: #694400;
+  color: #fff;
+}
+
+#essay-editing {
+  height: 50vh;
+  background: #69004a;
+  color: #fff;
+}
+
+/* rates section */
+#rates {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#rates td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#rates tr:nth-child(even){background-color: #f2f2f2;}
+
+#rates tr:hover {background-color: #ddd;}
+
+#rates th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
