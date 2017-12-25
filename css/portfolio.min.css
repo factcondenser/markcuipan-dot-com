@@ -333,7 +333,7 @@ i.work-icon {
 }
 
 .callout.resume {
-    background: url(../img/thinker.jpg);
+    background: url(../img/thinker-blur.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
