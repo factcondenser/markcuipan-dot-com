@@ -713,22 +713,22 @@ li:not(.credentials, .philosophy) {
 }
 
 /* rates section */
-#rates {
+#rates-table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-#rates td, #customers th {
+#rates-table td, #customers th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#rates tr:nth-child(even){background-color: #f2f2f2;}
+#rates-table tr:nth-child(even){background-color: #f2f2f2;}
 
-#rates tr:hover {background-color: #ddd;}
+#rates-table tr:hover {background-color: #ddd;}
 
-#rates th {
+#rates-table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
