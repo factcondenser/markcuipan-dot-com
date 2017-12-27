@@ -529,12 +529,12 @@ li:not(.credentials, .philosophy) {
 
 #philo-top {
   height: 33vh;
-  min-height: 264px;
+  min-height: 253px;
 }
 
 #philo-topleft-panel {
   height: 33vh;
-  min-height: 264px;
+  min-height: 253px;
   background: #b02334;
   color: #fff;
   display: none;
@@ -542,7 +542,7 @@ li:not(.credentials, .philosophy) {
 
 #philo-topright-panel {
   height: 33vh;
-  min-height: 264px;
+  min-height: 253px;
   background: #00c99d;
   color: #fff;
   display: none;
@@ -550,18 +550,18 @@ li:not(.credentials, .philosophy) {
 
 #philo-middle {
   height: 34vh;
-  min-height: 272px;
+  min-height: 262px;
   color: #b02334;
 }
 
 #philo-bottom {
   height: 33vh;
-  min-height: 264px;
+  min-height: 253px;
 }
 
 #philo-bottom-panel {
   height: 33vh;
-  min-height: 264px;
+  min-height: 253px;
   background: #7cc900;
   color: #fff;
   display: none;
@@ -569,7 +569,7 @@ li:not(.credentials, .philosophy) {
 
 #philo-right {
   height: 100vh;
-  min-height: 800px;
+  min-height: 768px;
   background: #c90016;
   color: #fff;
 }
@@ -578,41 +578,41 @@ li:not(.credentials, .philosophy) {
 
 #courses-left {
   height: 50vh;
-  min-height: 400px;
+  min-height: 384px;
   color: #1a8357;
   border-bottom: 3px solid #eee;
 }
 
 #academics-panel {
   height: 50vh;
-  min-height: 400px;
+  min-height: 384px;
   background: #00693e;
   color: #fff;
 }
 
 #testprep-panel {
   height: 50vh;
-  min-height: 400px;
+  min-height: 384px;
   background: #002c69;
   color: #fff;
 }
 
 #essay-editing-panel {
   height: 50vh;
-  min-height: 400px;
+  min-height: 384px;
   background: #156900;
   color: #fff;
 }
 
 #rates-left {
   height: 50vh;
-  min-height: 400px;
+  min-height: 384px;
   color: #e6962e;
 }
 
 #rates-right {
   height: 50vh;
-  min-height: 400px;
+  min-height: 384px;
   background: #ff8f00;
   color: #fff;
 }
@@ -625,23 +625,23 @@ li:not(.credentials, .philosophy) {
 }
 
 #rates-table td, #rates-table th {
-  border: 1px solid #ff5100;
+  border: 1px solid #ffd000;
   padding: 8px;
 }
 
-#rates-table tr:nth-child(even) {
-  background-color: #ffd000;
-}
-
-#rates-table tr:hover {
+#rates-table tr {
   background-color: #e6962e;
 }
+
+/* #rates-table tr:hover {
+  background-color: #ffd000;
+} */
 
 #rates-table th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
-  background-color: #ff8f00;
+  text-align: center;
+  background-color: #ff5100;
   color: white;
 }
 
@@ -650,13 +650,13 @@ li:not(.credentials, .philosophy) {
 .vertal-parent {
   position: relative;
   height: 100vh;
-  min-height: 800px;
+  min-height: 768px;
 }
 
 .vertal-parent-half {
   position: relative;
   height: 50vh;
-  min-height: 400px;
+  min-height: 384px;
 }
 
 .vertal-child {
@@ -788,5 +788,17 @@ li:not(.credentials, .philosophy) {
 @media screen and (max-width: 900px) {
   #philo-topright-text, #philo-bottom-text {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #academics-text, #testprep-text, #essay-editing-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #academics-text, #testprep-text, #essay-editing-text {
+    font-size: 14px;
   }
 }
