@@ -970,25 +970,25 @@ li:not(.credentials, .philosophy) {
 }
 
 @media screen and (max-width: 900px) {
-  #philo-topleft-text, #philo-bottom-text {
+  #philo-topleft-text, #philo-bottom-text, #academics-text, #testprep-text {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  #philo-topleft-text {
+  #philo-topleft-text, #academics-text, #testprep-text {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #academics-text, #testprep-text {
-    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  #academics-text, #testprep-text {
-    font-size: 14px;
+  h1 {
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px !important;
   }
 }

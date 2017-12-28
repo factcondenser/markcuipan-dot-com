@@ -380,9 +380,8 @@
           </div>
           <div class="col-sm-7 vertal-parent" id="contact-right">
             <div class="text-center vertal-child">
-              <form id="contact-form" method="post" action="contact.php" role="form">
-                <div class="messages">
-                </div>
+              <form id="contact-form" method="post" role="form"><!--action="contact.php"-->
+                <div class="messages"></div>
                 <div class="controls">
                   <div class="row">
                     <div class="col-md-6">
@@ -420,17 +419,17 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label for="form_message">Message *</label>
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please leave me a message."></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <input type="submit" class="btn btn-success btn-send" value="Send message">
+                      <input type="submit" class="btn btn-light btn-send" value="Send message">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                      <p class="text-muted"><strong>*</strong> These fields are required.</p>
                     </div>
                   </div>
                 </div>
@@ -442,7 +441,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <script src="../js/jquery.fullpage.min.js"></script>
     <script src="../js/shared.min.js"></script>
     <script src="../js/tutor.min.js"></script>

@@ -12,7 +12,7 @@ $(function () {
 
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
-            var url = "./contact.php";
+            var url = "https://formspree.io/markpan@live.com";
 
             // POST values in the background to the script URL
             $.ajax({
