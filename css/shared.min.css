@@ -498,6 +498,8 @@ li:not(.credentials, .philosophy) {
 
 /** Tutor **/
 
+/******************************************************************************/
+
 /* background section */
 
 #bg-blurb {
@@ -525,16 +527,18 @@ li:not(.credentials, .philosophy) {
   text-decoration: none;
 }
 
+/******************************************************************************/
+
 /* philosophy section */
 
 #philo-top {
   height: 33vh;
-  min-height: 253px;
+  min-height: 231px;
 }
 
 #philo-topleft-panel {
   height: 33vh;
-  min-height: 253px;
+  min-height: 231px;
   background: #b02334;
   color: #fff;
   display: none;
@@ -542,77 +546,224 @@ li:not(.credentials, .philosophy) {
 
 #philo-topright-panel {
   height: 33vh;
-  min-height: 253px;
-  background: #00c99d;
+  min-height: 231px;
+  background: #e67878;
   color: #fff;
   display: none;
 }
 
 #philo-middle {
   height: 34vh;
-  min-height: 262px;
+  min-height: 238px;
   color: #b02334;
 }
 
 #philo-bottom {
   height: 33vh;
-  min-height: 253px;
+  min-height: 231px;
 }
 
 #philo-bottom-panel {
   height: 33vh;
-  min-height: 253px;
-  background: #7cc900;
+  min-height: 231px;
+  background: #cc4242;
   color: #fff;
   display: none;
 }
 
 #philo-right {
   height: 100vh;
-  min-height: 768px;
+  min-height: 700px;
   background: #c90016;
   color: #fff;
 }
 
-/* courses & rates section */
+/******************************************************************************/
+
+/* courses section */
 
 #courses-left {
-  height: 50vh;
-  min-height: 384px;
-  color: #1a8357;
+  height: 100vh;
+  min-height: 700px;
+  color: #043b05;
   border-bottom: 3px solid #eee;
 }
 
 #academics-panel {
   height: 50vh;
-  min-height: 384px;
-  background: #00693e;
+  min-height: 350px;
+  background: #40a83b;
   color: #fff;
 }
 
 #testprep-panel {
   height: 50vh;
-  min-height: 384px;
-  background: #002c69;
+  min-height: 350px;
+  background: #043b05;
   color: #fff;
 }
 
 #essay-editing-panel {
   height: 50vh;
-  min-height: 384px;
-  background: #156900;
+  min-height: 350px;
+  background: #207b25;
   color: #fff;
 }
 
+#academics-text a {
+  color: #fff;
+  display: inline;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#academics-text a:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+#academics-text a:active, #academics-text a:focus {
+  text-decoration: none;
+}
+
+#academics-text ul,
+#testprep-text ul {
+  padding-left: 25px;
+}
+
+#academics-text ul ul,
+#testprep-text ul ul {
+  padding-left: 8px;
+}
+
+/* eng award modal */
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 80%;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/******************************************************************************/
+
+/* rates section */
+
 #rates-left {
-  height: 50vh;
-  min-height: 384px;
+  height: 100vh;
+  min-height: 700px;
   color: #e6962e;
 }
 
 #rates-right {
-  height: 50vh;
-  min-height: 384px;
+  height: 100vh;
+  min-height: 700px;
   background: #ff8f00;
   color: #fff;
 }
@@ -645,18 +796,51 @@ li:not(.credentials, .philosophy) {
   color: white;
 }
 
+/******************************************************************************/
+/* contact section */
+
+#contact-left {
+  height: 100vh;
+  min-height: 700px;
+  color: #721772;
+}
+
+#contact-right {
+  height: 100vh;
+  min-height: 700px;
+  background: #8b008b;
+  color: #fff;
+}
+
+#contact-left a {
+  color: #721772;
+  display: inline;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact-left a:hover {
+  color: #9370db;
+  text-decoration: none;
+}
+
+#contact-left a:active, #contact-left a:focus {
+  text-decoration: none;
+}
+
+/******************************************************************************/
 /* Alignment */
 
 .vertal-parent {
   position: relative;
   height: 100vh;
-  min-height: 768px;
+  min-height: 700px;
 }
 
 .vertal-parent-half {
   position: relative;
   height: 50vh;
-  min-height: 384px;
+  min-height: 350px;
 }
 
 .vertal-child {
@@ -797,14 +981,14 @@ li:not(.credentials, .philosophy) {
   }
 }
 
-@media screen and (max-width: 1500px) {
-  #academics-text, #testprep-text, #essay-editing-text {
+@media screen and (max-width: 900px) {
+  #academics-text, #testprep-text {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #academics-text, #testprep-text, #essay-editing-text {
+@media screen and (max-width: 800px) {
+  #academics-text, #testprep-text {
     font-size: 14px;
   }
 }
