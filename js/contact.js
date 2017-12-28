@@ -6,7 +6,6 @@ $(function () {
 
     $('#contact-form').validator();
 
-
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
 
@@ -21,14 +20,14 @@ $(function () {
                 data: $(this).serialize(),
                 success: function (data)
                 {
-                    // data = JSON object that contact.php returns
-
+                    // data = JSON object that contact.php returns (the below is a hack used in conjunction with formspree)
+                    data = {"type":"success","message":"Contact form successfully submitted.<br>Thank you, I will get back to you soon!"};
                     // we recieve the type of the message: success x danger and apply it to the
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
 
                     // let's compose Bootstrap alert box HTML
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true" style="display: inline;">&times;</button>' + messageText + '</div>';
 
                     // If we have messageAlert and messageText
                     if (messageAlert && messageText) {

@@ -242,7 +242,7 @@ i.fa-envelope:hover {
   background-size: cover;
   z-index: -10;
   background-color: #222;
-  background-image: url('../tutor/img/tutor.jpg')
+  background-image: url('../tutor/img/tutor.jpg');
 }
 
 .intro, .projects, .tutor-bg, .rates, .contact {
@@ -656,7 +656,7 @@ li:not(.credentials, .philosophy) {
 .modal {
   display: none;
   /* Hidden by default */
-  position: fixed;
+  position: absolute;
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
@@ -730,7 +730,7 @@ li:not(.credentials, .philosophy) {
 .close {
   position: absolute;
   top: 15px;
-  right: 35px;
+  left: 35px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -808,7 +808,7 @@ li:not(.credentials, .philosophy) {
 #contact-right {
   height: 100vh;
   min-height: 700px;
-  background: #8b008b;
+  background: #cea5e1;
   color: #fff;
 }
 
