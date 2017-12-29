@@ -1,4 +1,4 @@
-$(function() {
+ $(function() {
   $("a[href*=#]:not([href=#])").click(function() {
     if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") || location.hostname == this.hostname) {
       var a = $(this.hash);
@@ -37,8 +37,8 @@ $(document).ready(function() {
   var intraFolderIndex = Math.floor(Math.random() * 3);
   var foldersIndex = Math.floor(Math.random() * foldersKeys.length);
   var folderKey = foldersKeys[foldersIndex];
-  var bgPath = "img/" + folderKey + "/bg" + intraFolderIndex + ".jpg";
-  var bgBlurPath = "img/" + folderKey + "/bg" + intraFolderIndex + "-blur.jpg";
+  var bgPath = "assets/img/" + folderKey + "/bg" + intraFolderIndex + ".jpg";
+  var bgBlurPath = "assets/img/" + folderKey + "/bg" + intraFolderIndex + "-blur.jpg";
   var img = "url(" + bgPath + ")";
   var blurImg = "url(" + bgBlurPath + ")";
   $(".img-src").css("background-image", blurImg);
@@ -83,13 +83,13 @@ function createsoundbite(d) {
     }
   }
 }
-var englishname = createsoundbite("http://markcuipan.com/audio/markcuipan.mp3");
-var chinesename = createsoundbite("http://markcuipan.com/audio/panzizao.mp3");
+var englishname = createsoundbite("http://markcuipan.com/assets/audio/markcuipan.mp3");
+var chinesename = createsoundbite("http://markcuipan.com/assets/audio/panzizao.mp3");
 
 function changeToGif(x, str) {
-  x.src = "./img/proj/" + str + ".gif";
+  x.src = "./assets/img/proj/" + str + ".gif";
 }
 
 function changeToJpg(x, str) {
-  x.src = "./img/proj/" + str + ".jpg";
+  x.src = "./assets/img/proj/" + str + ".jpg";
 }

@@ -242,7 +242,7 @@ i.fa-envelope:hover {
   background-size: cover;
   z-index: -10;
   background-color: #222;
-  background-image: url('../tutor/img/tutor.jpg');
+  background-image: url('../img/tutor/tutor.jpg');
 }
 
 .intro, .projects, .tutor-bg, .rates, .contact {
