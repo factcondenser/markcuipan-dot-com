@@ -1,6 +1,6 @@
-./package-lock.json
-./node_modules/
+package-lock.json
+node_modules/
 .DS_Store
-./tutor/contact.php
-./assets/js/pre-js/
-./assets/css/pre-css/
+tutor/contact.php
+assets/js/pre-js/
+assets/css/pre-css/
