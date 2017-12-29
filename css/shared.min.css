@@ -808,7 +808,7 @@ li:not(.credentials, .philosophy) {
 #contact-right {
   height: 100vh;
   min-height: 700px;
-  background: #cea5e1;
+  background: #8c388c;
   color: #fff;
 }
 
@@ -820,12 +820,21 @@ li:not(.credentials, .philosophy) {
 }
 
 #contact-left a:hover {
-  color: #9370db;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #contact-left a:active, #contact-left a:focus {
   text-decoration: none;
+}
+
+#contact-form .has-error .control-label,
+#contact-form .has-error .help-block,
+#contact-form .has-error .form-control-feedback {
+    color: #ff8080;
+}
+
+#contact-form p {
+  color: #bbb;
 }
 
 /******************************************************************************/
