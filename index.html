@@ -24,26 +24,9 @@
   <link rel="shortcut icon" href="http://markcuipan.com/img/favicon/favicon.png" type="image/png" />
   <link rel="author" href="https://github.com/factcondenser" />
   <link rel="canonical" href="http://markcuipan.com/" />
-  <noscript id="deferred-styles">
-    <link type="text/css" async="" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" async="" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link type="text/css" async="" href="./assets/css/shared.min.css" rel="stylesheet" />
-  </noscript>
-  <script>
-    var loadDeferredStyles = function() {
-      var addStylesNode = document.getElementById("deferred-styles");
-      var replacement = document.createElement("div");
-      replacement.innerHTML = addStylesNode.textContent;
-      document.body.appendChild(replacement)
-      addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-      window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-    if (raf) raf(function() {
-      window.setTimeout(loadDeferredStyles, 0);
-    });
-    else window.addEventListener('load', loadDeferredStyles);
-  </script>
+  <link type="text/css" async="true" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link type="text/css" async="true" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link type="text/css" async="true" href="./assets/css/shared.min.css" rel="stylesheet" />
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://markcuipan.com/img/favicon/favicon180.png" />
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://markcuipan.com/img/favicon/favicon152.png" />
