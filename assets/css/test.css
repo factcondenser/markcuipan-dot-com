@@ -390,7 +390,7 @@ i.scroll:hover {
 }
 
 @media(max-width:768px) {
-  .img-src .tutor-src {
+  .img-src {
     background-attachment: scroll
   }
   .callout.work, .callout.projects, .callout.resume, .callout.about {
