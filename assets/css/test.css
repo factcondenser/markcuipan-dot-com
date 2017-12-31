@@ -1,6 +1,11 @@
+@font-face {
+  font-family: MyHelveticaNeue;
+  src: url(fonts/helvetica-neue-bold.ttf) format("truetype")
+}
+
 html, body {
   height: 100%;
-  width: 100%
+  width: 100%;
 }
 
 .vert-text {
@@ -98,10 +103,14 @@ i.fa-envelope:hover {
   padding: 0
 }
 
+hr {
+   border-color: #ddd;
+}
+
 .sidebar-nav hr {
-  border-color: #ddd;
-  padding-left: 5%;
-  width: 40%;
+  border-color: #aaa;
+  margin-left: 5%;
+  width: 45%;
 }
 
 .sidebar-nav li {
@@ -361,10 +370,6 @@ footer {
   padding: 100px 0;
   background: #eee;
   color: #333
-}
-
-hr {
-   border-color: #ddd;
 }
 
 .top-scroll {
