@@ -1,7 +1,6 @@
 package-lock.json
 node_modules/
 .DS_Store
-tutor/index.max.html
 tutor/contact.php
 assets/js/pre-js/
 assets/css/pre-css/
