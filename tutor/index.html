@@ -78,15 +78,15 @@
 <body id="page" oncontextmenu="return false">
   <a id="menu-toggle" href="https://markcuipan.com/#" class="btn btn-lg toggle"><i class="fa fa-bars"></i></a>
   <div id="sidebar-wrapper">
-    <ul class="sidebar-nav"> <a id="menu-close" href="https://markcuipan.com/#" class="btn btn-default btn-lg pull-right toggle toggle-override"><i class="fa fa-times"></i></a>
+    <ul id="fpMenu" class="sidebar-nav"> <a id="menu-close" href="https://markcuipan.com/#" class="btn btn-default btn-lg pull-right toggle toggle-override"><i class="fa fa-times"></i></a>
       <li class="sidebar-brand"><a href="https://markcuipan.com/">Mark Cui Pan</a> </li>
-      <li><a href="./#top">Top</a> </li>
-      <li><a href="./#background">Background</a> </li>
-      <li><a href="./#philosophy">Teaching Philosophy</a> </li>
-      <li><a href="./#courses">Courses</a> </li>
-      <li><a href="./#rates">Rates</a> </li>
-      <li><a href="./#testimonials">Testimonials</a> </li>
-      <li><a href="./#contact">Contact</a> </li>
+      <li data-menuanchor="tutor"><a href="#tutor">Top</a> </li>
+      <li data-menuanchor="background"><a href="#background">Background</a> </li>
+      <li data-menuanchor="philosophy"><a href="#philosophy">Teaching Philosophy</a> </li>
+      <li data-menuanchor="courses"><a href="#courses">Courses</a> </li>
+      <li data-menuanchor="rates"><a href="#rates">Rates</a> </li>
+      <!-- <li data-menuanchor="testimonials"><a href="#testimonials">Testimonials</a> </li> -->
+      <li data-menuanchor="contact"><a href="#contact">Contact</a> </li>
       <hr>
       <li><a class="sidebar-special" href="https://markcuipan.com/">Home</a></li>
       <li><a class="sidebar-special" href="https://markcuipan.com/blog/">Blog</a> </li>
@@ -94,13 +94,13 @@
     </ul>
   </div>
   <div id="fullpage">
-    <div class="section" id="top">
+    <div class="section" id="mtutor">
       <div class="tutor-src"></div>
       <div class="vert-text">
         <h1 class="textual-content">"The scared fighter may be the best fighter, but the scared learner is always a poor learner." - John Holt</h1>
       </div>
     </div>
-    <div class="section" id="background">
+    <div class="section" id="mbackground">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-5 vertal-parent" id="bg-blurb">
@@ -135,7 +135,7 @@
         </div>
       </div>
     </div>
-    <div class="section" id="philosophy">
+    <div class="section" id="mphilosophy">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-7" id="philo-left">
@@ -203,7 +203,7 @@
         </div>
       </div>
     </div>
-    <div class="section" id="courses">
+    <div class="section" id="mcourses">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4 vertal-parent" id="courses-left">
@@ -317,7 +317,7 @@
         </div>
       </div>
     </div>
-    <div class="section" id="rates">
+    <div class="section" id="mrates">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4 vertal-parent" id="rates-left">
@@ -360,8 +360,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="section">
-      testimonials
+    <!-- <div class="section" id="mtestimonials">
       <div class="slide" data-anchor="megan">
         <img class="img-rounded img-responsive" src="../assets/img/tutor/testimonial_meg.jpg" alt="Megan's testimonial - I got the highest mark in the whole year for the bio test!! Thank you so much for your help [*happy emoji*]">
       </div>
@@ -377,7 +376,7 @@
       <div class="slide" data-anchor="sophie">
       </div>
     </div> -->
-    <div class="section" id="contact">
+    <div class="section" id="mcontact">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-5 vertal-parent" id="contact-left">
@@ -459,7 +458,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <script src="../assets/js/jquery.fullpage.min.js"></script>
     <script src="../assets/js/shared.min.js"></script>
-    <script src="../assets/js/tutor.min.js"></script>
+    <script src="../assets/js//tutor.min.js"></script>
     <script src="../assets/js/contact.min.js"></script>
 </div></body>
 
