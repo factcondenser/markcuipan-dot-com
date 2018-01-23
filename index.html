@@ -26,7 +26,251 @@
   <link rel="canonical" href="https://markcuipan.com/" />
 
   <style>
-    html, body {height: 100%;width: 100%;}.vert-text {color: #eee;display: table-cell;vertical-align: middle;text-align: center;opacity: .9 }.vert-text h1 {padding: 0;margin: 0;font-size: 4.5em;font-weight: 700;text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3) }.icon {opacity: .4;color: #eee }.icon:hover {opacity: .8;}i.fa-linkedin:hover {color: #0077b5 }i.fa-github:hover {color: #333 }i.fa-quora:hover {color: #A20 }i.fa-envelope:hover {color: #0072C6 }.tooltip-inner {background: 0;color: #eee;opacity: .6 }.dp {height: 240px;width: 240px;border-radius: 100%;margin-top: -60px;border: 3px solid #eee }.lead a {color: #09d }.lead a.audio-clip {color: #eee;opacity: .6 }.lead a.audio-clip:hover {text-decoration: none;color: #ddd;opacity: 1.0 }#sidebar-wrapper {margin-right: -250px;right: 0;width: 250px;background: #000;position: fixed;height: 100%;overflow-y: auto;z-index: 1000;-webkit-transition: all .4s ease 0;-moz-transition: all .4s ease 0;-ms-transition: all .4s ease 0;-o-transition: all .4s ease 0;transition: all .4s ease 0 }.sidebar-nav {position: absolute;top: 0;width: 250px;list-style: none;margin: 0;padding: 0 }hr {border-color: #ddd;}.sidebar-nav hr {border-color: #aaa;margin-left: 5%;width: 45%;}.sidebar-nav li {line-height: 40px;text-indent: 20px }.sidebar-nav li a {color: #999;display: block;text-decoration: none }.sidebar-nav li a:hover {color: #eee;background: rgba(255, 255, 255, 0.2);text-decoration: none }.sidebar-nav li a:active, .sidebar-nav li a:focus {text-decoration: none }.sidebar-nav>.sidebar-brand {height: 55px;line-height: 55px;font-size: 18px }.sidebar-nav>.sidebar-brand a {color: #999 }.sidebar-nav>.sidebar-brand a:hover {color: #eee;background: 0 }.sidebar-special {font-size: 20px }#menu-toggle {top: 0;right: 0;position: fixed;z-index: 1;color: #eee;text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);border-radius: 10px;-webkit-transition: all .3s ease 0;-moz-transition: all .3s ease 0;-ms-transition: all .3s ease 0;-o-transition: all .3s ease 0;transition: all .3s ease 0 }#menu-toggle:hover {border: 1px solid #999;background-color: rgba(0, 0, 0, 0.1) }#sidebar-wrapper.active {right: 250px;width: 250px;-webkit-transition: all .4s ease 0;-moz-transition: all .4s ease 0;-ms-transition: all .4s ease 0;-o-transition: all .4s ease 0;transition: all .4s ease 0 }.toggle {margin: 5px 5px 0 0 }.toggle-override {color: rgba(255, 255, 255, 0.4);border-radius: 10px;background-color: #222;border-color: rgba(255, 255, 255, 0.4) }.toggle-override:hover {color: #eee;background-color: #333 }.location-label {color: #eee;opacity: .1;bottom: 10px;left: 20px;position: absolute;}.header {display: table;height: 100%;width: 100%;position: relative;}.img-src {position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-attachment: fixed;background-repeat: no-repeat;background-position: center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;z-index: -10;background-color: #222;background-image: url('../assets/img/Madison0/bg0-blur.jpg') }.scroll-img {opacity: 0;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-image: url('../assets/img/Madison0/bg0.jpg') }@media(max-width:767px) {.img-src {background-attachment: scroll }}
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .vert-text {
+      color: #eee;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      opacity: .9
+    }
+
+    .vert-text h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 4.5em;
+      font-weight: 700;
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3)
+    }
+
+    .icon {
+      opacity: .4;
+      color: #eee
+    }
+
+    .icon:hover {
+      opacity: .8;
+    }
+
+    i.fa-linkedin:hover {
+      color: #0077b5
+    }
+
+    i.fa-github:hover {
+      color: #333
+    }
+
+    i.fa-quora:hover {
+      color: #A20
+    }
+
+    i.fa-envelope:hover {
+      color: #0072C6
+    }
+
+    .tooltip-inner {
+      background: 0;
+      color: #eee;
+      opacity: .6
+    }
+
+    .dp {
+      height: 240px;
+      width: 240px;
+      border-radius: 100%;
+      margin-top: -60px;
+      border: 3px solid #eee
+    }
+
+    .lead a {
+      color: #09d
+    }
+
+    .lead a.audio-clip {
+      color: #eee;
+      opacity: .6
+    }
+
+    .lead a.audio-clip:hover {
+      text-decoration: none;
+      color: #ddd;
+      opacity: 1.0
+    }
+
+    #sidebar-wrapper {
+      margin-right: -250px;
+      right: 0;
+      width: 250px;
+      background: #000;
+      position: fixed;
+      height: 100%;
+      overflow-y: auto;
+      z-index: 1000;
+      -webkit-transition: all .4s ease 0;
+      -moz-transition: all .4s ease 0;
+      -ms-transition: all .4s ease 0;
+      -o-transition: all .4s ease 0;
+      transition: all .4s ease 0
+    }
+
+    .sidebar-nav {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    hr {
+      border-color: #ddd;
+    }
+
+    .sidebar-nav hr {
+      border-color: #aaa;
+      margin-left: 5%;
+      width: 45%;
+    }
+
+    .sidebar-nav li {
+      line-height: 40px;
+      text-indent: 20px
+    }
+
+    .sidebar-nav li a {
+      color: #999;
+      display: block;
+      text-decoration: none
+    }
+
+    .sidebar-nav li a:hover {
+      color: #eee;
+      background: rgba(255, 255, 255, 0.2);
+      text-decoration: none
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+      text-decoration: none
+    }
+
+    .sidebar-nav>.sidebar-brand {
+      height: 55px;
+      line-height: 55px;
+      font-size: 18px
+    }
+
+    .sidebar-nav>.sidebar-brand a {
+      color: #999
+    }
+
+    .sidebar-nav>.sidebar-brand a:hover {
+      color: #eee;
+      background: 0
+    }
+
+    .sidebar-special {
+      font-size: 20px
+    }
+
+    #menu-toggle {
+      top: 0;
+      right: 0;
+      position: fixed;
+      z-index: 1;
+      color: #eee;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      -webkit-transition: all .3s ease 0;
+      -moz-transition: all .3s ease 0;
+      -ms-transition: all .3s ease 0;
+      -o-transition: all .3s ease 0;
+      transition: all .3s ease 0
+    }
+
+    #menu-toggle:hover {
+      border: 1px solid #999;
+      background-color: rgba(0, 0, 0, 0.1)
+    }
+
+    #sidebar-wrapper.active {
+      right: 250px;
+      width: 250px;
+      -webkit-transition: all .4s ease 0;
+      -moz-transition: all .4s ease 0;
+      -ms-transition: all .4s ease 0;
+      -o-transition: all .4s ease 0;
+      transition: all .4s ease 0
+    }
+
+    .toggle {
+      margin: 5px 5px 0 0
+    }
+
+    .toggle-override {
+      color: rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      background-color: #222;
+      border-color: rgba(255, 255, 255, 0.4)
+    }
+
+    .toggle-override:hover {
+      color: #eee;
+      background-color: #333
+    }
+
+    .location-label {
+      color: #eee;
+      opacity: .1;
+      bottom: 10px;
+      left: 20px;
+      position: absolute;
+    }
+
+    .header {
+      display: table;
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
+
+    .img-src {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      z-index: -10;
+      background-color: #222;
+      background-image: url('../assets/img/Madison0/bg0-blur.jpg')
+    }
+
+    .scroll-img {
+      opacity: 0;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-image: url('../assets/img/Madison0/bg0.jpg')
+    }
+
+    @media(max-width:767px) {
+      .img-src {
+        background-attachment: scroll
+      }
+    }
   </style>
   <noscript id="deferred-styles">
     <link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -106,7 +350,7 @@
       <br>
       <h1>Mark</h1>
       <p class="lead"> Hi! I'm <b><a class="audio-clip" onclick="englishname.playclip()"> <i class="fa fa-volume-up"></i> Mark Cui Pan </a></b>. My Chinese name is <b><a class="audio-clip" onclick="chinesename.playclip()"> <i class="fa fa-volume-up"></i> 潘子早 </a></b>.
-        <br> I <a class="audio-clip" href="https://markcuipan.com/blog/">write</a>, I <a class="audio-clip" href="https://markcuipan.com/autonomy/">dream</a>, and, occasionally, I <a class="audio-clip" href="https://markcuipan.com/tutor/"> tutor. </a> </p>
+        <br> I <a class="audio-clip" href="https://markcuipan.com/blog/">write</a>, I <a class="audio-clip" href="https://markcuipan.com/autonomy/">dream</a>, and, occasionally, I <a class="audio-clip" href="https://markcuipan.com/tutor/"> tutor. </a>        </p>
       <ul class="list-inline ">
         <!-- <li> <a title="" class="icon" href="http://www.facebook.com/markcuipan" target="_blank" data-original-title="Facebook"> <i class="fa fa-facebook fa-3x"></i> </a> </li> -->
         <!-- <li> <a title="" class="icon" href="https://twitter.com/markcuipan" target="_blank" data-original-title="Twitter"> <i class="fa fa-twitter fa-3x"></i> </a> </li> -->
@@ -124,7 +368,8 @@
       <div class="row">
         <div class="col-md-offset-3 col-md-6 text-center">
           <h2><i class="fa fa-user fa-3x"></i></h2>
-          <p class="lead"> I'm a web developer and occasional <a href="https://markcuipan.com/tutor/" target="_blank">tutor</a>.
+          <p class="lead"> I'm a web developer and occasional <a href="https://markcuipan.com/tutor/" target="_blank">tutor</a> currently building <a href="https://www.baozitutors.com/" target="_blank">Baozi Tutors</a>, a startup that I co-founded in Hong Kong.
+            <br> If you know any great tutors, tell them to <a href="https://www.baozitutors.com/signup?type=tutor" target="_blank">sign up</a>.
             <br>
             <br> I graduated with a Bachelors in <a href="https://xkcd.com/1823" target="_blank">Molecular Biology</a> from
             <br> the <a href="https://integrativebiology.wisc.edu/" target="_blank">University of Wisconsin-Madison</a> in 2015, after which
@@ -134,8 +379,7 @@
             and graduated from <a href="http://west.wausauschools.org/" target="_blank">West High School</a> in 2011.
             <br>
             <br> I gather materials relating to my twin passions of automation and economics on a page called <a href="https://markcuipan.com/autonomy/" target="_blank">Autonomy</a>,
-            <br> and I keep a collection of my written works on my <a href="https://markcuipan.com/blog/" target="_blank">blog</a>.
-            <br> I'm currently building <a href="https://www.baozitutors.com/" target="_blank">Baozi Tutors</a>, a startup that I co-founded in Hong Kong. If you know any great tutors, tell them to <a href="https://www.baozitutors.com/signup?type=tutor" target="_blank">sign up</a>.</p>
+            <br> and I keep a collection of my written works on my <a href="https://markcuipan.com/blog/" target="_blank">blog</a>.</p>
         </div>
       </div>
     </div>
@@ -156,20 +400,31 @@
       <br>
       <div class="row">
         <div class="col-md-offset-3 col-md-6 text-center">
-          <div class="work-item"> <a href="https://markcuipan.com/tutor/" target="_blank"> <img class="work-icon enlarge-on-hover" src="./assets/img/work/hk.jpg"> </a>
-            <h3>Freelance<br> <small>Jun '16 - Present</small></h3>
-            <p class="lead"> When I'm not doing my own learning on <b><a href="https://www.edx.org/" target="_blank">edX</a></b>, <b><a href="https://www.coursera.org/" target="_blank">Coursera</a></b>, <b><a href="https://www.udacity.com/" target="_blank">Udacity</a></b>,
-              or <b><a href="https://www.udemy.com/" target="_blank">Udemy</a></b>, I teach. I use <b><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></b> and <b><a href="https://slack.com/" target="_blank">Slack</a></b> to help
-              students reach their learning goals. </p>
+          <div class="work-item"> <a href="https://www.baozitutors.com/" target="_blank"> <img class="work-icon enlarge-on-hover" src="./assets/img/work/bzt.jpg"> </a>
+            <h3>Baozi Tutors<br> <small>Oct '17 - Present</small></h3>
+            <p class="lead"> I co-founded this startup with <b><a href="https://github.com/wbonack" target="_blank">Westley Bonack</a></b>. We match tutors with clients in Hong Kong</b>. Need a tutor? We'll find you one for free. Sign up <a href="https://www.baozitutors.com/signup?type=client"
+                target="_blank">here</a>.</p>
           </div>
         </div>
       </div>
       <br>
       <div class="row">
-        <div class="col-md-offset-3 col-md-6 text-center">
-          <div class="work-item"> <a href="https://www.keystoneprep.com/" target="_blank"> <img class="work-icon enlarge-on-hover" src="./assets/img/work/ks.jpg"> </a>
-            <h3>Keystone<br> <small>Oct '15 - May '16</small></h3>
-            <p class="lead"> I worked in the <b>Hong Kong</b> office, helping students and their families navigate the complex world of university applications as an <b>Education Consultant and Instructor</b>. </p>
+        <div class="col-md-offset-2 col-md-8">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <div class="work-item"> <a href="https://markcuipan.com/tutor/" target="_blank"> <img class="work-icon enlarge-on-hover" src="./assets/img/work/hk.jpg"> </a>
+                <h3>Freelance<br> <small>Jun '16 - Sep '17</small></h3>
+                <p class="lead"> When I'm not doing my own learning on <b><a href="https://www.edx.org/" target="_blank">edX</a></b>, <b><a href="https://www.coursera.org/" target="_blank">Coursera</a></b>, <b><a href="https://www.udacity.com/" target="_blank">Udacity</a></b>,
+                  or <b><a href="https://www.udemy.com/" target="_blank">Udemy</a></b>, I teach. I use <b><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></b> and <b><a href="https://slack.com/" target="_blank">Slack</a></b> to
+                  help students reach their learning goals. </p>
+              </div>
+            </div>
+            <div class="col-md-6 text-center">
+              <div class="work-item"> <a href="https://www.keystoneprep.com/" target="_blank"> <img class="work-icon enlarge-on-hover" src="./assets/img/work/ks.jpg"> </a>
+                <h3>Keystone<br> <small>Oct '15 - May '16</small></h3>
+                <p class="lead"> I worked in the <b>Hong Kong</b> office, helping students and their families navigate the complex world of university applications as an <b>Education Consultant and Instructor</b>. </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -280,32 +535,29 @@
         <div class="col-md-4 text-center">
           <div class="projects-item"> <a href="#" target="_blank"> <img class="projects-icon enlarge-on-hover" src="./assets/img/proj/kanj.jpg"> </a>
             <h3>Kanjure<br> <small>Summer '15</small></h3>
-            <p class="lead"> A mobile app for bringing up the pronunciation and definition of a Chinese character by simply touching it with your finger. I've been wanting to build this ever since I moved to Hong Kong post-college and found translating the texts of my
-              cousins with something like the free tier of <a href="https://play.google.com/store/apps/details?id=com.pleco.chinesesystem&hl=en" target="_blank">Pleco</a> (and having to constantly flip between app activities) to be sufficiently annoying.
-              This is a work in progress, since I'm still in the process of learning enough <b>Android</b> and <b>Swift</b> to build it out. Once I'm done, I'll put it up on both Google Play and the App Store. </p>
+            <p class="lead"> A mobile app for bringing up the pronunciation and definition of a Chinese character by simply touching it with your finger. I've been wanting to build this ever since I moved to Hong Kong post-college. Translating the text messages of my
+              cousins using the free tier of <a href="https://play.google.com/store/apps/details?id=com.pleco.chinesesystem&hl=en" target="_blank">Pleco</a> (and having to constantly flip between app activities) was annoying. This is a work in progress,
+              since I'm still in the process of learning enough <b>Android</b> and <b>Swift</b> to build it out. Once I'm done, I'll put it up on both Google Play and the App Store. </p>
           </div>
         </div>
       </div>
       <br>
       <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="row">
-            <div class="col-md-6 text-center">
-              <div class="projects-item"> <a href="https://github.com/factcondenser/intro-ai-hw3/blob/master/src/BayesNetPlayer_mpan5.java" target="_blank"> <img class="projects-icon enlarge-on-hover" onmouseover="changeToGif(this, 'nannon')" onmouseout="changeToJpg(this, 'nannon')" src="./assets/img/proj/nannon.jpg"> </a>
-                <h3>Nannon Bot<br> <small>Fall '14</small></h3>
-                <p class="lead"> I wrote the code for this as part of the <b>Introduction to Artificial Intelligence</b> course that I took in college. I actually wrote several Nannon players implementing various algorithms, but the most successful one used a <b>Bayesian network</b>                  as its model. Our professor pitted everyone's players against each other in an intra-class nannon bot tournament. My Bayes net player placed 12 out of 37. I want to update this project by creating an interface that allows a human player
-                  to play against the AI. </p>
-              </div>
-            </div>
-            <div class="col-md-6 text-center">
-              <div class="projects-item"> <a href="https://github.com/factcondenser/calculate-concentrations/blob/master/calculate_concentrations.py" target="_blank"> <img class="projects-icon enlarge-on-hover" onmouseover="changeToGif(this, 'dna')" onmouseout="changeToJpg(this, 'dna')" src="./assets/img/proj/dna.jpg"> </a>
-                <h3>qPCR Concentrations Calculator<br> <small>Summer '14</small></h3>
-                <p class="lead"> There's a reason I traded wet labs for <i><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank">DRY</a></i> computing (See what I did there?). Talk about repetitive! During my time as a research assistant, I spent
-                  way too much time punching numbers into an Excel spreadsheet and running simple calculations on them. Enter this <a href="https://github.com/factcondenser/calculate-concentrations/blob/master/calculate_concentrations.py" target="_blank">Python script</a>.
-                  It takes a TSV file of measurements from a <a href="https://en.wikipedia.org/wiki/Qubit_fluorometer" target="-_blank">Qubit</a> device and spits out the necessary volumes of various substances that need to be mixed in test tubes in order
-                  to synthesize <a href="https://en.wikipedia.org/wiki/Complementary_DNA" target="_blank">cDNA</a>. It was my first time writing <b>Python</b> and, coming from Java, I really didn't miss the semicolons. </p>
-              </div>
-            </div>
+
+        <div class="col-md-6 text-center">
+          <div class="projects-item"> <a href="https://github.com/factcondenser/intro-ai-hw3/blob/master/src/BayesNetPlayer_mpan5.java" target="_blank"> <img class="projects-icon enlarge-on-hover" onmouseover="changeToGif(this, 'nannon')" onmouseout="changeToJpg(this, 'nannon')" src="./assets/img/proj/nannon.jpg"> </a>
+            <h3>Nannon Bot<br> <small>Fall '14</small></h3>
+            <p class="lead"> I wrote the code for this as part of the <b>Introduction to Artificial Intelligence</b> course that I took in college. I actually wrote several Nannon players implementing various algorithms, but the most successful one used a <b>Bayesian network</b>              as its model. Our professor pitted everyone's players against each other in an intra-class nannon bot tournament. My Bayes net player placed 12 out of 37. I want to update this project by creating an interface that allows a human player
+              to play against the AI. </p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="projects-item"> <a href="https://github.com/factcondenser/calculate-concentrations/blob/master/calculate_concentrations.py" target="_blank"> <img class="projects-icon enlarge-on-hover" onmouseover="changeToGif(this, 'dna')" onmouseout="changeToJpg(this, 'dna')" src="./assets/img/proj/dna.jpg"> </a>
+            <h3>qPCR Concentrations Calculator<br> <small>Summer '14</small></h3>
+            <p class="lead"> There's a reason I traded wet labs for <i><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank">DRY</a></i> computing (See what I did there?). Talk about repetitive! During my time as a research assistant, I spent
+              way too much time punching numbers into an Excel spreadsheet and running simple calculations on them. Enter this <a href="https://github.com/factcondenser/calculate-concentrations/blob/master/calculate_concentrations.py" target="_blank">Python script</a>.
+              It takes a TSV file of measurements from a <a href="https://en.wikipedia.org/wiki/Qubit_fluorometer" target="-_blank">Qubit</a> device and spits out the necessary volumes of various substances that need to be mixed in test tubes in order
+              to synthesize <a href="https://en.wikipedia.org/wiki/Complementary_DNA" target="_blank">cDNA</a>. It was my first time writing <b>Python</b> and, coming from Java, I really didn't miss the semicolons. </p>
           </div>
         </div>
       </div>
@@ -322,7 +574,8 @@
         </div>
         <div class="col-md-5 text-center">
           <h3>Other Personal Projects</h3>
-          <p class="lead"> I'm currently working with <b><a href="https://github.com/wbonack" target="_blank">Westley Bonack</a></b> to build a website for matching clients with tutors in Hong Kong. Besides that, I'm also learning how to build <b>Android</b> and <b>iOS</b>            apps.
+          <p class="lead"> I'm currently working with <b><a href="https://github.com/wbonack" target="_blank">Westley Bonack</a></b> to build <a href="https://www.baozitutors.com/" target="_blank">a website</a> for matching clients with tutors in Hong Kong. Besides that,
+            I'm also learning how to build <b><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">progressive web apps</a></b> in <b>React</b>.
         </div>
       </div>
     </div>
@@ -359,7 +612,7 @@
       <div class="row">
         <div class="col-md-4 text-center">
           <h3><i class="fa fa-pencil fa-2x"></i></h3>
-          <p class="lead"> A short story I wrote for a biology class assignment was <a href="https://soundcloud.com/fabledo/forever-after-by-mark-pan-audio-story" target="_blank">published</a> in audiobook format. I <a target="_blank" href="https://markcuipan.com/blog/">write</a> whenever I'm struck by a thought or a feeling that I want to capture and explore. </p>
+          <p class="lead"> A short story I wrote for a biology class assignment was <a href="https://soundcloud.com/fabledo/forever-after-by-mark-pan-audio-story" target="_blank">published</a> in audiobook format. I <a target="_blank" href="https://markcuipan.com/blog/">write</a>            whenever I'm struck by a thought or a feeling that I want to capture and explore. </p>
         </div>
         <div class="col-md-4 text-center">
           <h3><i class="fa fa-plane fa-2x"></i></h3>
