@@ -47,6 +47,10 @@
       window.setTimeout(loadDeferredStyles, 0);
     });
     else window.addEventListener('load', loadDeferredStyles);
+
+    window.onload = function() {
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    };
   </script>
 
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -391,7 +395,7 @@
         <div class="col-md-10 col-md-offset-1 text-center">
           <hr>
           <p class="lead">This page is modeled on the work of <b><a href="http://debarghyadas.com/">Debarghya Das</a></b>, used with his permission.
-          <p class="lead">Copyright © Mark Cui Pan 2023</p>
+          <p class="lead">Copyright © Mark Cui Pan <span id="year"></span></p>
         </div>
       </div>
     </div>

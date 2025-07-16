@@ -45,6 +45,10 @@
       window.setTimeout(loadDeferredStyles, 0);
     });
     else window.addEventListener('load', loadDeferredStyles);
+
+    window.onload = function() {
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    };
   </script>
 
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../assets/img/favicon/favicon180.png">
@@ -121,7 +125,7 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1 text-center">
           <hr>
-          <p class="lead">Copyright © Mark Cui Pan 2023</p>
+          <p class="lead">Copyright © Mark Cui Pan <span id="year"></span></p>
         </div>
       </div>
     </div>
